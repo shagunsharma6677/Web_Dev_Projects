@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <script src="./src/scripts/index.js"></script>
+    <title>Index Page</title>
+  </head>
+
+  <body>
+    <div id="container">
+    <div>
+      <!--Create Show Products button here, give id as "show-products". avoid making spelling mistakes in HTML id's-->
+      <button onclick="redirect()" id="show-products" >Show products</button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <form id = "product_form" onsubmit="getFormData(event)" >
+
+        <input id="product_name" type="text" placeholder="name">
+        <input id="product_brand" type="text" placeholder="brand">
+        <input id="product_price" type="number" placeholder="price">
+        <input id="product_image" type="text" placeholder="image">
+        <input type="submit" placeholder="Submit">
+
+
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
+ 
+
